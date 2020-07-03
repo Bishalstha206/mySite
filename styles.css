@@ -1,0 +1,179 @@
+body{
+    margin: 0px;
+    text-align: center;   /* 👉🏼 "text-align" doesn't work if "width" of any element is in % ( width: 30%; ).
+                                👉🏼 For example:- "width" of h1 tag below is in % unit
+                                          h1 { width: 40%; }
+                                👉🏼 At this condition h1 will not be aligned at centre it will reamin at its natural position.
+                            👉🏼 In this condn to align h1 to center we can use margin:-
+                                          h1 { width: 40%;
+                                               margin: 0 auto; (or margin: 0 auto 0 auto;)
+                                             }
+                                👉🏼 By using margin, here top & bottom margin will be "0" and left & right margin will be "auto". And by
+                                   default "auto" align or put h1 to center putting equal margin to both left & right side.             
+                         */
+    font-family: 'Merriweather', serif;            
+}
+
+h1 {
+    margin: 50px auto 0 auto;
+    color:  #66BFBF;
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+}
+
+.top-paragraph {
+    font-weight: normal;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color:  #66BFBF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    padding: 30px auto;
+}
+
+h3 {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: #11999E;
+    font-family: 'Metal Mania', cursive;
+    text-decoration: none;
+    margin: 10px 20px;
+    font-size: 19px;
+}
+
+a:hover{
+    color: #eaf6f6;
+}
+
+p {
+    line-height: 2;
+    color: #40514e;
+}
+
+hr {
+    border-top: 6px dotted #dddddd;
+    border-bottom: none;
+    width: 4%;
+    margin: 110px auto;
+}
+
+.top-container {
+    background-color: #e4f9f5;
+    position: relative;
+    padding-top: 100px;
+}
+
+.underline-span {
+    text-decoration: underline;
+}
+
+.top-cloud {
+    position: absolute;
+    top: 80px;
+    right: 250px;
+
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 250px;
+    bottom: 300px;
+}
+
+.profile {
+    width: 30%;
+    margin: 100px auto 0px auto;
+}
+
+.h2-profile {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-size: 1.9em;
+    font-weight: normal;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto 130px auto;
+    text-align: left;
+}
+
+.webdev-image {
+    width: 25%;
+    float: left;               /* float allows to image or any container wrap around by text i.e texts can be shown beside of image 
+                                  either on left or right side. (but not recommended to use frequently as it can create mess in site)  */
+    margin-right: 70px;
+}
+
+.photography-image {
+    width: 25%;
+    float: right;
+    margin-left: 70px;
+}
+
+.contact-me {
+    margin: 0px auto 110px auto;
+    width: 40%;
+}
+
+.contact-me-h3 {
+    padding: 10px 0;
+}
+
+.contact-me-paragraph {
+    margin: 40px auto 50px;
+}
+
+.bottom-container {
+    background-color: #66BFBF;
+    padding: 40px 0px 20px;
+    line-height: 4;
+}
+
+.copyright-paragraph {
+    font-size: 0.7em;
+    color: #eaf6f6;
+}
+
+
+/* .webdev-skill-discription {        👉🏼[ clear property help to remove warpped(floating) text around image. It pushes text below image 
+    clear: left;                           or any container to next block from warpped around position.]
+}
+
+.photography-skill-discription {
+    clear: right;
+*/
+
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 35;
+    -moz-border-radius: 35;
+    border-radius: 35px;
+    font-family: 'Merriweather', serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+  }
